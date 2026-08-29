@@ -1,320 +1,1289 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Salaar | Youth Association</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #18212f;
-      background: #f7f9fc;
-      line-height: 1.6;
-    }
+<title>Team Salaar | Youth Association</title>
 
-    header {
-      background: #102a43;
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<meta name="description" content="Team Salaar Youth Association - Inspiring Youth. Building Community.">
 
-    .logo { font-size: 24px; font-weight: bold; }
+<style>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 15px;
-    }
-
-    nav a:hover { color: #ffd166; }
-
-    .hero {
-      background: linear-gradient(135deg, #102a43, #1f5f8b);
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h1 { font-size: 48px; margin-bottom: 15px; }
-
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-      font-size: 19px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 13px 25px;
-      border-radius: 6px;
-      background: #ffd166;
-      color: #102a43;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 65px 25px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #102a43;
-      font-size: 32px;
-      margin-bottom: 16px;
-    }
-
-    .intro {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto 35px;
-      color: #536171;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 26px;
-      border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    }
-
-    .card h3 {
-      color: #1f5f8b;
-      margin-bottom: 10px;
-    }
-
-    .event {
-      background: white;
-      border-left: 5px solid #ffd166;
-      border-radius: 6px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-    }
-
-    .contact {
-      background: #e8f1f8;
-      text-align: center;
-      border-radius: 12px;
-    }
-
-    footer {
-      background: #102a43;
-      color: white;
-      text-align: center;
-      padding: 22px;
-    }
-
-    @media (max-width: 650px) {
-      header { display: block; text-align: center; }
-      nav { margin-top: 12px; }
-      nav a { margin: 0 7px; }
-      .hero h1 { font-size: 35px; }
-    }
-.founder-card {
-  max-width: 700px;
-  margin: 30px auto 0;
-  padding: 25px;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
 }
 
-.founder-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#18212f;
+    background:#f7f9fc;
+    line-height:1.6;
 }
 
-.founder-card h3 {
-  color: #1f5f8b;
-  margin-bottom: 8px;
+/* HEADER */
+
+header{
+    background:#102a43;
+    color:white;
+    padding:12px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
-@media (max-width: 650px) {
-  .founder-card {
-    flex-direction: column;
-    text-align: center;
-  }
-}  </style>
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd166;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(135deg,rgba(16,42,67,.95),rgba(31,95,139,.90));
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:clamp(38px,6vw,65px);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#ffd166;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:19px;
+    color:#e8eef5;
+}
+
+.button{
+    display:inline-block;
+    margin-top:28px;
+    padding:13px 25px;
+    border-radius:7px;
+    background:#ffd166;
+    color:#102a43;
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid #ffd166;
+    transition:.3s;
+}
+
+.button:hover{
+    background:transparent;
+    color:#ffd166;
+}
+
+/* SECTIONS */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 25px;
+}
+
+h2{
+    text-align:center;
+    color:#102a43;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.intro{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 35px;
+    color:#536171;
+    font-size:17px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:4px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-top-color:#ffd166;
+}
+
+.card h3{
+    color:#1f5f8b;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#536171;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.07);
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+/* VISION */
+
+.vision-section{
+    background:#eef5fa;
+    max-width:none;
+}
+
+.vision-inner{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* FOUNDER */
+
+.founder-card{
+    max-width:750px;
+    margin:30px auto 0;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.founder-card img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ffd166;
+}
+
+.founder-card h3{
+    color:#1f5f8b;
+    margin-bottom:8px;
+    font-size:25px;
+}
+
+.founder-card p{
+    color:#536171;
+    margin:5px 0;
+}
+
+.founder-card a{
+    color:#1f5f8b;
+    font-weight:bold;
+}
+
+/* ACTIVITIES */
+
+.activity-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* EVENTS */
+
+.event{
+    background:white;
+    border-left:5px solid #ffd166;
+    border-radius:8px;
+    padding:24px;
+    margin:18px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+
+.event h3{
+    color:#1f5f8b;
+}
+
+.event p{
+    color:#536171;
+}
+
+.event-date{
+    font-weight:bold;
+    color:#102a43 !important;
+}
+
+/* ACHIEVEMENTS */
+
+.impact{
+    background:#102a43;
+    max-width:none;
+    color:white;
+}
+
+.impact-inner{
+    max-width:1100px;
+    margin:auto;
+}
+
+.impact h2{
+    color:white;
+}
+
+.impact .intro{
+    color:#d8e3ed;
+}
+
+.stat{
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.stat h3{
+    color:#ffd166;
+    font-size:42px;
+}
+
+.stat p{
+    color:white;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.gallery-item{
+    height:240px;
+    border-radius:10px;
+    overflow:hidden;
+    background:#e8f1f8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* JOIN */
+
+.join-section{
+    background:#eef5fa;
+    max-width:none;
+}
+
+.join-inner{
+    max-width:750px;
+    margin:auto;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccd6df;
+    border-radius:6px;
+    font-size:16px;
+    font-family:inherit;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+form button{
+    width:100%;
+    cursor:pointer;
+    border:none;
+    font-size:16px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#e8f1f8;
+    text-align:center;
+    border-radius:12px;
+}
+
+.contact p{
+    margin:10px 0;
+    color:#536171;
+}
+
+.contact a{
+    color:#1f5f8b;
+    font-weight:bold;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:27px;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* FOOTER */
+
+footer{
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer p{
+    margin:5px 0;
+    color:#d7e1ea;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        justify-content:center;
+        margin-bottom:10px;
+    }
+
+    nav{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:8px;
+    }
+
+    nav a{
+        margin:0 5px;
+        font-size:12px;
+    }
+
+    .hero{
+        padding:90px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .founder-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    section{
+        padding:55px 18px;
+    }
+
+}
+
+</style>
 </head>
 
+
 <body>
-  <header>
-   <div class="logo">
-  <img src="logo.jpg" alt="Team Salaar Logo" style="width:50px; height:50px; object-fit:cover; border-radius:50%; vertical-align:middle; margin-right:10px;">
-  TEAM SALAAR
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpg" alt="Team Salaar Logo">
+
+TEAM SALAAR
+
 </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#activities">Activities</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Inspiring Youth. Building Community.</h1>
-      <p>
-        Team Salaar is a youth association bringing young people together
-        through service, leadership, friendship, and positive action.
-      </p>
-      <a class="button" href="#contact">Join Our Community</a>
-    </section>
+<nav>
 
-    <section id="about">
-      <h2>About Team Salaar</h2>
-      <p class="intro">
-        We believe young people have the energy, ideas, and passion to make a
-        real difference. Our association creates opportunities to learn, lead,
-        help others, and grow together.
-      </p>
-    </section>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#vision">Vision</a>
+<a href="#team">Team</a>
+<a href="#activities">Activities</a>
+<a href="#events">Events</a>
+<a href="#gallery">Gallery</a>
+<a href="#join">Join Us</a>
+<a href="#contact">Contact</a>
 
-    <section id="activities">
-     <section id="team">
-  <h2>Meet Our Founder</h2>
+</nav>
 
-  <div class="founder-card">
-    <img src="saiyakesh-vankudoth.jpg.jpeg" alt="Saiyakesh Vankudoth">
+</header>
 
-    <div>
-      <h3>Saiyakesh Vankudoth</h3>
-      <p><strong>Founder of Team Salaar</strong></p>
-      <p>Leading Team Salaar with a vision to bring young people together through service, friendship, leadership, and positive action.</p>
-     <p>
-    <strong>Instagram:</strong>
-    <a href="https://www.instagram.com/sai.lens_3/" target="_blank" rel="noopener">
-        @sai.lens_3
-    </a>
-</p>
+
+<main>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+<h1>
+Inspiring Youth.
+<span>Building Community.</span>
+</h1>
+
 <p>
-    <strong>Gmail:</strong>
-    <a href="mailto:saivankudoth03@gmail.com">
-        saivankudoth03@gmail.com
-    </a>
-</p>
-<p>
-    <strong>Date of Birth:</strong> 27-08-2002
+Team Salaar is a youth association bringing young people together
+through service, leadership, friendship, and positive action.
 </p>
 
-</div>
-</div>
+<a class="button" href="#join">
+Join Team Salaar
+</a>
+
+<a class="button" href="#about">
+Learn More
+</a>
+
 </section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2>About Team Salaar</h2>
+
+<p class="intro">
+United youth. Strong community. Positive change.
+</p>
+
+<div class="about-box">
+
+<p>
+<strong>Team Salaar</strong> is a youth association created
+to bring young people together through friendship, service,
+leadership and community development.
+</p>
+
+<br>
+
+<p>
+We believe young people have the energy, ideas and passion
+to make a real difference. Our goal is to create opportunities
+for youth to learn, lead, help others and grow together.
+</p>
+
+<br>
+
+<p>
+Together, we can build a stronger, more responsible and
+better community for everyone.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= VISION & MISSION ================= -->
+
+<div class="vision-section">
+
+<div class="vision-inner">
+
+<section id="vision">
+
+<h2>Vision & Mission</h2>
+
+<p class="intro">
+The values that guide Team Salaar.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="activity-icon">🎯</div>
+
+<h3>Our Vision</h3>
+
+<p>
+To build a united, responsible and progressive youth
+community where everyone has an opportunity to contribute.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">🤝</div>
+
+<h3>Our Mission</h3>
+
+<p>
+To encourage youth participation in social service,
+community development, leadership and positive activities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">⭐</div>
+
+<h3>Our Values</h3>
+
+<p>
+Unity, respect, responsibility, friendship, leadership,
+service and teamwork.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+
+<!-- ================= FOUNDER & TEAM ================= -->
+
+<section id="team">
+
+<h2>Meet Our Founder</h2>
+
+<div class="founder-card">
+
+<img
+src="saiyakesh-vankudoth.jpg.jpeg"
+alt="Saiyakesh Vankudoth"
+>
+
+<div>
+
+<h3>Saiyakesh Vankudoth</h3>
+
+<p>
+<strong>Founder of Team Salaar</strong>
+</p>
+
+<p>
+Leading Team Salaar with a vision to bring young people
+together through service, friendship, leadership,
+and positive action.
+</p>
+
+<p>
+<strong>Instagram:</strong>
+<a href="https://www.instagram.com/sai.lens_3/"
+target="_blank"
+rel="noopener">
+@sai.lens_3
+</a>
+</p>
+
+<p>
+<strong>Gmail:</strong>
+<a href="mailto:saivankudoth03@gmail.com">
+saivankudoth03@gmail.com
+</a>
+</p>
+
+<p>
+<strong>Date of Birth:</strong> 27-08-2002
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= OUR TEAM ================= -->
 
 <section id="team-members">
-    <h2>Our Team</h2>
 
-    <div class="cards">
+<h2>Our Team</h2>
 
-        <div class="card">
-            <h3>President</h3>
-            <p>Member Name</p>
-        </div>
+<div class="cards">
 
-        <div class="card">
-            <h3>Vice President</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>President</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>Treasurer</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>Vice President</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>General Secretary</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>Treasurer</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>Coordinator</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>General Secretary</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>Joint Coordinator</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>Coordinator</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>Executive Member</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>Joint Coordinator</h3>
+<p>Member Name</p>
+</div>
 
-        <div class="card">
-            <h3>Team Member</h3>
-            <p>Member Name</p>
-        </div>
+<div class="card">
+<h3>Executive Member</h3>
+<p>Member Name</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Team Member</h3>
+<p>Member Name</p>
+</div>
+
+</div>
+
 </section>
-      <h2>What We Do</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Community Service</h3>
-          <p>We support local causes and work together to improve our community.</p>
-        </div>
-        <div class="card">
-          <h3>Youth Leadership</h3>
-          <p>We help members build confidence, teamwork, and leadership skills.</p>
-        </div>
-        <div class="card">
-          <h3>Events & Activities</h3>
-          <p>We organize meetings, sports, cultural events, and fun activities.</p>
-        </div>
-      </div>
-    </section>
 
-    <section id="events">
-      <h2>Upcoming Events</h2>
-      <p class="intro">Update these events whenever your association plans a new activity.</p>
 
-      <div class="event">
-        <h3>Monthly Youth Meeting</h3>
-        <p><strong>Date:</strong> Coming soon</p>
-        <p>Meet new people, share ideas, and help plan our next activities.</p>
-      </div>
+<!-- ================= ACTIVITIES ================= -->
 
-      <div class="event">
-        <h3>Community Service Activity</h3>
-        <p><strong>Date:</strong> Coming soon</p>
-        <p>Join Team Salaar as we work together to make a positive impact.</p>
-      </div>
-    </section>
+<section id="activities">
 
-   <section id="contact" class="contact">
-  <h2>Get Involved</h2>
-  <p>Want to join Team Salaar or collaborate with us?</p>
-  <p><strong>Email:</strong> teamsalaar03@gmail.com</p>
-  <p><strong>Address:</strong> Peddabai Thanda (Vlg), Kodakandla (Mdl), Jangaon (Dist), Telangana, India – 506302</p>
-  <p><strong>Instagram:</strong> @sai.lens_3</p>
-  <a class="button" href="mailto:teamsalaar03@gmail.com">Contact Us</a>
+<h2>Our Activities</h2>
+
+<p class="intro">
+Working together to make a positive difference.
+</p>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="activity-icon">❤️</div>
+
+<h3>Community Service</h3>
+
+<p>
+Supporting local causes and helping people
+in our community.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">🩸</div>
+
+<h3>Blood Donation</h3>
+
+<p>
+Supporting blood donation programs and
+helping people in emergency situations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">🌱</div>
+
+<h3>Plantation Drives</h3>
+
+<p>
+Promoting environmental awareness and
+creating a greener community.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">🧹</div>
+
+<h3>Cleanliness Drives</h3>
+
+<p>
+Working together to keep our villages
+and surroundings clean.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">📚</div>
+
+<h3>Education Support</h3>
+
+<p>
+Encouraging education and supporting
+young people in their studies.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="activity-icon">🏏</div>
+
+<h3>Sports & Youth</h3>
+
+<p>
+Promoting sports, teamwork, fitness and
+friendship among young people.
+</p>
+
+</div>
+
+
+</div>
+
 </section>
-  </main>
 
-  <footer>
-    <p>© 2026 Team Salaar Youth Association. All rights reserved.</p>
-  </footer>
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events">
+
+<h2>Upcoming Events</h2>
+
+<p class="intro">
+Stay connected with Team Salaar activities and programs.
+</p>
+
+
+<div class="event">
+
+<h3>Monthly Youth Meeting</h3>
+
+<p class="event-date">
+📅 Date: Coming Soon
+</p>
+
+<p>
+Meet new people, share ideas and help plan
+our upcoming Team Salaar activities.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<h3>Community Service Activity</h3>
+
+<p class="event-date">
+📅 Date: Coming Soon
+</p>
+
+<p>
+Join Team Salaar as we work together to
+make a positive impact in our community.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<h3>Upcoming Team-Salaar Program</h3>
+
+<p class="event-date">
+📅 Date: To Be Announced
+</p>
+
+<p>
+Details about our next program will be
+updated here.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<div class="impact" id="achievements">
+
+<div class="impact-inner">
+
+<section>
+
+<h2>Our Impact</h2>
+
+<p class="intro">
+Every small effort can create a big difference.
+</p>
+
+<div class="cards">
+
+<div class="stat">
+
+<h3>0+</h3>
+
+<p>Events</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>0+</h3>
+
+<p>Volunteers</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>0+</h3>
+
+<p>People Reached</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>0+</h3>
+
+<p>Community Programs</p>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<p class="intro">
+Moments and memories from Team Salaar.
+</p>
+
+<div class="gallery">
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Team+Salaar"
+alt="Team Salaar"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Community+Service"
+alt="Community Service"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Team+Event"
+alt="Team Event"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Youth+Activity"
+alt="Youth Activity"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Team+Meeting"
+alt="Team Meeting"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://via.placeholder.com/800x600?text=Team-Salaar"
+alt="Team Salaar"
+>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= JOIN US ================= -->
+
+<div class="join-section">
+
+<div class="join-inner">
+
+<section id="join">
+
+<h2>Join Team Salaar</h2>
+
+<p class="intro">
+Become part of our youth community and contribute
+towards positive change.
+</p>
+
+<form onsubmit="joinTeam(event)">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required
+>
+
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required
+>
+
+<input
+type="text"
+id="village"
+placeholder="Village / Location"
+>
+
+<select id="interest">
+
+<option value="">
+Select Your Interest
+</option>
+
+<option>
+Community Service
+</option>
+
+<option>
+Social Service
+</option>
+
+<option>
+Sports
+</option>
+
+<option>
+Events
+</option>
+
+<option>
+Youth Leadership
+</option>
+
+<option>
+Volunteering
+</option>
+
+</select>
+
+
+<textarea
+id="message"
+placeholder="Why do you want to join Team Salaar?"
+></textarea>
+
+
+<button
+type="submit"
+class="button"
+>
+Send Request on WhatsApp
+</button>
+
+</form>
+
+</section>
+
+</div>
+
+</div>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+Have questions or want to work with Team Salaar?
+Get in touch with us.
+</p>
+
+<br>
+
+<p>
+<strong>📧 Email:</strong>
+<a href="mailto:teamsalaar03@gmail.com">
+teamsalaar03@gmail.com
+</a>
+</p>
+
+<p>
+<strong>📞 Phone:</strong>
+<a href="tel:9849419133">
+9849419133
+</a>
+</p>
+
+<p>
+<strong>📍 Address:</strong>
+Peddabai Thanda (Vlg), Kodakandla (Mdl),
+Jangaon (Dist), Telangana, India – 506302
+</p>
+
+<p>
+<strong>📷 Instagram:</strong>
+<a href="https://www.instagram.com/sai.lens_3/"
+target="_blank"
+rel="noopener">
+@sai.lens_3
+</a>
+</p>
+
+<a
+class="button"
+href="mailto:teamsalaar03@gmail.com"
+>
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/919849419133"
+target="_blank"
+rel="noopener"
+title="Chat with Team Salaar"
+>
+💬
+</a>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+<strong>TEAM SALAAR</strong>
+</p>
+
+<p>
+Youth Association
+</p>
+
+<p>
+Unity • Service • Leadership
+</p>
+
+<p>
+© 2026 Team Salaar Youth Association.
+All rights reserved.
+</p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function joinTeam(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const village =
+        document.getElementById("village").value;
+
+    const interest =
+        document.getElementById("interest").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const whatsappText =
+        "Hello Team Salaar!%0A%0A" +
+
+        "I would like to join Team Salaar.%0A%0A" +
+
+        "Name: " +
+        encodeURIComponent(name) +
+        "%0A" +
+
+        "Phone: " +
+        encodeURIComponent(phone) +
+        "%0A" +
+
+        "Village: " +
+        encodeURIComponent(village) +
+        "%0A" +
+
+        "Interest: " +
+        encodeURIComponent(interest) +
+        "%0A" +
+
+        "Message: " +
+        encodeURIComponent(message);
+
+
+    window.open(
+        "https://wa.me/919849419133?text=" +
+        whatsappText,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
 </body>
 </html>
