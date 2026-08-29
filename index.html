@@ -126,7 +126,36 @@
       nav a { margin: 0 7px; }
       .hero h1 { font-size: 35px; }
     }
-  </style>
+.founder-card {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.founder-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.founder-card h3 {
+  color: #1f5f8b;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 650px) {
+  .founder-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}  </style>
 </head>
 
 <body>
@@ -163,7 +192,25 @@
     </section>
 
     <section id="activities">
-      <h2>What We Do</h2>
+     <section id="team">
+  <h2>Meet Our Founder</h2>
+
+  <div class="founder-card">
+    <img src="saiyakesh-vankudoth.jpg" alt="Saiyakesh Vankudoth">
+
+    <div>
+      <h3>Saiyakesh Vankudoth</h3>
+      <p><strong>Founder of Team Salaar</strong></p>
+      <p>Leading Team Salaar with a vision to bring young people together through service, friendship, leadership, and positive action.</p>
+      <p>
+        <strong>Instagram:</strong>
+        <a href="https://www.instagram.com/sai.lens_3/" target="_blank" rel="noopener">
+          @sai.lens_3
+        </a>
+      </p>
+    </div>
+  </div>
+</section> <h2>What We Do</h2>
       <div class="cards">
         <div class="card">
           <h3>Community Service</h3>
