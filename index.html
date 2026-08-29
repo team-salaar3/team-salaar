@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Salaar | Youth Association</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: Arial, sans-serif;
+      color: #18212f;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102a43;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo { font-size: 24px; font-weight: bold; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    nav a:hover { color: #ffd166; }
+
+    .hero {
+      background: linear-gradient(135deg, #102a43, #1f5f8b);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 { font-size: 48px; margin-bottom: 15px; }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 25px;
+      border-radius: 6px;
+      background: #ffd166;
+      color: #102a43;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 25px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #102a43;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 35px;
+      color: #536171;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 26px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      color: #1f5f8b;
+      margin-bottom: 10px;
+    }
+
+    .event {
+      background: white;
+      border-left: 5px solid #ffd166;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .contact {
+      background: #e8f1f8;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 650px) {
+      header { display: block; text-align: center; }
+      nav { margin-top: 12px; }
+      nav a { margin: 0 7px; }
+      .hero h1 { font-size: 35px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">TEAM SALAAR</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Inspiring Youth. Building Community.</h1>
+      <p>
+        Team Salaar is a youth association bringing young people together
+        through service, leadership, friendship, and positive action.
+      </p>
+      <a class="button" href="#contact">Join Our Community</a>
+    </section>
+
+    <section id="about">
+      <h2>About Team Salaar</h2>
+      <p class="intro">
+        We believe young people have the energy, ideas, and passion to make a
+        real difference. Our association creates opportunities to learn, lead,
+        help others, and grow together.
+      </p>
+    </section>
+
+    <section id="activities">
+      <h2>What We Do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Community Service</h3>
+          <p>We support local causes and work together to improve our community.</p>
+        </div>
+        <div class="card">
+          <h3>Youth Leadership</h3>
+          <p>We help members build confidence, teamwork, and leadership skills.</p>
+        </div>
+        <div class="card">
+          <h3>Events & Activities</h3>
+          <p>We organize meetings, sports, cultural events, and fun activities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <p class="intro">Update these events whenever your association plans a new activity.</p>
+
+      <div class="event">
+        <h3>Monthly Youth Meeting</h3>
+        <p><strong>Date:</strong> Coming soon</p>
+        <p>Meet new people, share ideas, and help plan our next activities.</p>
+      </div>
+
+      <div class="event">
+        <h3>Community Service Activity</h3>
+        <p><strong>Date:</strong> Coming soon</p>
+        <p>Join Team Salaar as we work together to make a positive impact.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get Involved</h2>
+      <p>Want to join Team Salaar or collaborate with us?</p>
+      <p><strong>Email:</strong> your-email@example.com</p>
+      <p><strong>Instagram:</strong> @team_salaar</p>
+      <a class="button" href="mailto:your-email@example.com">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Team Salaar Youth Association. All rights reserved.</p>
+  </footer>
+</body>
+</html>
